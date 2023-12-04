@@ -13,5 +13,17 @@ wrappers.forEach((wrapper) => {
         plusBtn.classList.toggle('hidden');
         minusBtn.classList.toggle('hidden');
     })
+    
+    plusBtn.addEventListener('click', () => {
+        paraSelc.classList.toggle('hidden');
+        plusBtn.classList.toggle('hidden');
+        minusBtn.classList.toggle('hidden');
+    })
+
+    minusBtn.addEventListener('click', () => {
+        paraSelc.classList.toggle('hidden');
+        plusBtn.classList.toggle('hidden');
+        minusBtn.classList.toggle('hidden');
+    })
 })
 
