@@ -8,22 +8,13 @@ wrappers.forEach((wrapper) => {
     const plusBtn = wrapper.querySelector('.icon-plus');
     const minusBtn = wrapper.querySelector('.icon-minus');
 
-    headSelc.addEventListener('click', () => {
+    const toggleVisibility  = function() {
         paraSelc.classList.toggle('hidden');
         plusBtn.classList.toggle('hidden');
         minusBtn.classList.toggle('hidden');
-    })
-    
-    plusBtn.addEventListener('click', () => {
-        paraSelc.classList.toggle('hidden');
-        plusBtn.classList.toggle('hidden');
-        minusBtn.classList.toggle('hidden');
-    })
+    }
 
-    minusBtn.addEventListener('click', () => {
-        paraSelc.classList.toggle('hidden');
-        plusBtn.classList.toggle('hidden');
-        minusBtn.classList.toggle('hidden');
-    })
-})
-
+    headSelc.addEventListener('click', toggleVisibility)
+    plusBtn.addEventListener('click', toggleVisibility)
+    minusBtn.addEventListener('click', toggleVisibility)
+});
